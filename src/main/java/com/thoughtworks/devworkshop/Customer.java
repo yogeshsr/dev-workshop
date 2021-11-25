@@ -15,24 +15,24 @@ public class Customer {
     String result = name + ", ";
     int amount = 0;
     for(Rental each: rentals) {
-      double thisAmount = 0;
+      int thisAmount = 0;
       //determine amounts for each line
       switch (each.getMovie().getPriceCode()) {
         case Movie.REGULAR:
-          thisAmount += 3;
+          thisAmount += 3 * each.getDaysRented();
           break;
         case Movie.NEW_RELEASE:
-          thisAmount += 4;
+          thisAmount += 4 * each.getDaysRented();
           break;
         case Movie.CHILDRENS:
-          thisAmount += 2;
+          thisAmount += 2 * each.getDaysRented();
           break;
       }
-      amount += each.getDaysRented() * thisAmount;
+      amount += thisAmount;
       result += String.format("Title: %s, Rented days: %s, Rental: %s\n",
           each.getMovie().getTitle(),
           each.getDaysRented(),
-          amount);
+          thisAmount);
     }
 
     return result + "Total: " + amount;
