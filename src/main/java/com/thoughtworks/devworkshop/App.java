@@ -3,6 +3,9 @@
  */
 package com.thoughtworks.devworkshop;
 
+import com.thoughtworks.devworkshop.lending.Borrower;
+import com.thoughtworks.devworkshop.lending.Lender;
+
 public class App {
     public static void main(String[] args) {
         Lender lender1 = new Lender("lender1", 500.0);

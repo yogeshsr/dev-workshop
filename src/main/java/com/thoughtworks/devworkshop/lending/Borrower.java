@@ -1,4 +1,4 @@
-package com.thoughtworks.devworkshop;
+package com.thoughtworks.devworkshop.lending;
 
 public class Borrower extends Person {
   Double amount;
