@@ -1,4 +1,4 @@
-package com.thoughtworks.devworkshop;
+package com.thoughtworks.devworkshop.movierental;
 
 import java.util.List;
 

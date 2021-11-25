@@ -1,4 +1,4 @@
-package com.thoughtworks.devworkshop;
+package com.thoughtworks.devworkshop.movierental;
 
 public class Rental {
   int daysRented;
